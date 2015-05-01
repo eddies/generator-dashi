@@ -15,12 +15,7 @@ module.exports = yeoman.generators.Base.extend({
       'Welcome to the delicious ' + chalk.red('Dashi') + ' generator!'
     );
 
-    var prompts = [{
-      type: 'confirm',
-      name: 'someOption',
-      message: 'Would you like to enable this option?',
-      default: true
-    }];
+    var prompts = [];
 
     this.prompt(prompts, function (props) {
       this.props = props;
@@ -32,20 +27,57 @@ module.exports = yeoman.generators.Base.extend({
 
   writing: {
     app: function () {
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath('_package.json'),
-        this.destinationPath('package.json')
+        this.destinationPath('package.json'),
+        { appname: this.appname }
       );
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath('_bower.json'),
-        this.destinationPath('bower.json')
+        this.destinationPath('bower.json'),
+        { appname: this.appname }
       );
+      
+      this.fs.copyTpl(
+        this.templatePath('_index.html'),
+        this.destinationPath('app/index.html'),
+        { appname: this.appname }
+      );
+      
+      this.fs.copy(
+        this.templatePath('main.css'),
+        this.destinationPath('app/styles/main.css')
+      );
+      
+      this.fs.copy(
+        this.templatePath('main.js'),
+        this.destinationPath('app/scripts/main.js')
+      );
+      
+      this.fs.copy(
+        this.templatePath('demo.csv'),
+        this.destinationPath('app/data/demo.csv')
+      );
+      
+      this.fs.copy(
+        this.templatePath('Gruntfile.js'),
+        this.destinationPath('Gruntfile.js')
+      );
+      
     },
 
     projectfiles: function () {
       this.fs.copy(
         this.templatePath('editorconfig'),
         this.destinationPath('.editorconfig')
+      );
+      this.fs.copy(
+        this.templatePath('gitignore'),
+        this.destinationPath('.gitignore')
+      );
+      this.fs.copy(
+        this.templatePath('gitattributes'),
+        this.destinationPath('.gitattributes')
       );
       this.fs.copy(
         this.templatePath('jshintrc'),
