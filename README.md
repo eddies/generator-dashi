@@ -1,6 +1,8 @@
 # generator-dashi [![Build Status](https://secure.travis-ci.org/eddies/generator-dashi.png?branch=master)](https://travis-ci.org/eddies/generator-dashi)
 
-Dashi is dashboard for data visualizations.
+*dashi: data made delicious*
+
+Dashi is dashboard for data visualizations, using [dc.js](https://dc-js.github.io/dc.js/) and [AdminLTE](https://github.com/almasaeed2010/AdminLTE).
 
 generator-dashi is a Yeoman generator for creating Dashi applications. 
 
