@@ -81,3 +81,23 @@ Dashi app on GitHub (if you're using GitHub, of course).
 
 ## License
 Apache License, Version 2.0
+
+## Maintainers
+### Development
+During development you'll want to symlink your local development copy of 
+generator-dashi (so that `yo dashi` uses your local development copy and not
+the npm released version). From within the root of your development copy of
+generator-dashi (i.e. `cd /home/eddies/generator-dashi`):
+
+```bash
+npm link
+```
+### Releases
+Firstly, you'll need to have a user account on [npm](https://npmjs.org). Then, 
+assuming you're ready to release version number "x.y.z":
+
+```bash
+npm version x.y.z -m "Version %s"
+git push && git push --tags
+npm publish
+```
