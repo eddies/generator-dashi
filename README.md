@@ -48,6 +48,9 @@ Finally, initiate the generator:
 yo dashi
 ```
 
+Be patient, this can take a bit while npm is fetching dependencies. The whole install 
+seems to take about two minutes for me.
+
 ## Next steps
 Now, just add data to taste.
 

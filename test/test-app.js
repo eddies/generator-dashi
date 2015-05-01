@@ -18,7 +18,8 @@ describe('dashi:app', function () {
       'bower.json',
       'package.json',
       '.editorconfig',
-      '.jshintrc'
+      '.jshintrc',
+      'app/index.html'
     ]);
   });
 });
