@@ -1,7 +1,6 @@
 'use strict';
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
-var yosay = require('yosay');
 
 module.exports = yeoman.generators.Base.extend({
   initializing: function () {
@@ -12,9 +11,9 @@ module.exports = yeoman.generators.Base.extend({
     var done = this.async();
 
     // Have Yeoman greet the user.
-    this.log(yosay(
-      'Welcome to the dandy ' + chalk.red('Dashi') + ' generator!'
-    ));
+    this.log(
+      'Welcome to the delicious ' + chalk.red('Dashi') + ' generator!'
+    );
 
     var prompts = [{
       type: 'confirm',
