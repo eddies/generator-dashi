@@ -68,7 +68,13 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('README.md'),
         this.destinationPath('README.md')
       );
-      
+    },
+    
+    testfiles: function () {
+      this.fs.copy(
+        this.templatePath('test'),
+        this.destinationPath('test/')
+      );
     },
 
     projectfiles: function () {
