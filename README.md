@@ -1,28 +1,41 @@
 # generator-dashi [![Build Status](https://secure.travis-ci.org/eddies/generator-dashi.png?branch=master)](https://travis-ci.org/eddies/generator-dashi)
 
-> [Yeoman](http://yeoman.io) generator
+Dashi is dashboard for data visualizations.
 
+generator-dashi is a Yeoman generator for creating Dashi applications. 
+
+Assuming you have Yeoman installed, you can just run `yo dashi` and
+generator-dashi will 
+
+* stub out a new Dashi application
+* sort out all the JavaScript dependencies
+* drop some git config files in place 
+* set up some convenient Grunt tasks to support 
+  * live reloading in your browser as you edit 
+  * publish your app to GitHub Pages, with all the supporting files concatenated and minified.
 
 ## Getting Started
 
-### What is Yeoman?
+### Prerequisites
+In order to use generator-dashi, you need to have [Yeoman](http://yeoman.io) installed. In order to install Yeoman, you'll need to have [npm](https://npmjs.org) installed. Don't worry, it only *seems* like it's turtles all the way down.
 
-Trick question. It's not a thing. It's this guy:
+> If you're a Mac user, using Homebrew, the following will get your pre-reqs sorted out:
+> 
+> ```bash
+brew install node --without-npm
+echo prefix=~/.node >> ~/.npmrc
+curl -L https://www.npmjs.com/install.sh | sh
+```
 
-![](http://i.imgur.com/JHaAlBJ.png)
+> Finally, add `~/.node/bin` to your PATH (e.g., add `export PATH="$HOME/.node/bin:$PATH"` to your `.bashrc`)
 
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
+Now, assuming you have [npm](https://npmjs.org) installed, go ahead and install Yeoman:
 
 ```bash
 npm install -g yo
 ```
 
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
+### Installation
 To install generator-dashi from npm, run:
 
 ```bash
@@ -35,13 +48,33 @@ Finally, initiate the generator:
 yo dashi
 ```
 
-### Getting To Know Yeoman
+## Next steps
+Now, just add data to taste.
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+### Some useful commands:
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+```bash
+grunt serve
+```
 
+will serve up your Dashi app and support live reloading in your browser. 
+
+Next, you'll probably want to start editing `app/index.html` and `app/main.js` 
+to customize your app.
+
+```bash
+grunt
+```
+
+will package everything up, concat and minify your css, javascript, etc., and 
+drop everything in your `dist/` directory. 
+
+```bash
+grunt gh-pages
+```
+
+will push the contents of `dist/` to your gh-pages branch, letting you host your
+Dashi app on GitHub (if you're using GitHub, of course).
 
 ## License
-
-MIT
+Apache License, Version 2.0
