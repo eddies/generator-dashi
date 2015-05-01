@@ -7,7 +7,6 @@
   "repository": "eddies/generator-dashi",
   "author": {
     "name": "Edwin Shin",
-    "email": "",
     "url": "https://github.com/eddies"
   },
   "scripts": {
@@ -17,7 +16,14 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "dashi",
+    "visualization",
+    "dashboard",
+    "data",
+    "dc",
+    "crossfilter",
+    "d3"
   ],
   "dependencies": {
     "yeoman-generator": "^0.19.0",
@@ -25,5 +31,8 @@
   },
   "devDependencies": {
     "mocha": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   }
 }

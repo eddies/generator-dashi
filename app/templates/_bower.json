@@ -1,6 +1,7 @@
 {
   "name": "<%= appname %>",
   "version": "0.0.0",
+  "description": "A dashboard for data visualizations",
   "license:": "Apache-2.0",
   "dependencies": {
     "bootstrap": "~3.2.0",
