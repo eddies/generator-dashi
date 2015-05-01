@@ -1,6 +1,6 @@
 {
   "name": "generator-dashi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Yeoman generator for Dashi",
   "license": "Apache-2.0",
   "main": "app/index.js",
