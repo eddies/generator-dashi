@@ -57,6 +57,11 @@ seems to take about two minutes for me.
 Now, just add data to taste.
 
 ### Some useful commands:
+In order to run any of the Grunt tasks which are described below, you'll need the Grunt CLI installed:
+
+```bash
+npm install -g grunt-cli
+```
 
 ```bash
 grunt serve
@@ -71,7 +76,7 @@ to customize your app.
 grunt
 ```
 
-will package everything up, concat and minify your css, javascript, etc., and 
+will package everything up, concat and minify your css, javascript, etc., run your tests, and 
 drop everything in your `dist/` directory. 
 
 ```bash
