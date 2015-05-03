@@ -31,10 +31,10 @@ curl -L https://www.npmjs.com/install.sh | sh
 
 > Finally, add `~/.node/bin` to your PATH (e.g., add `export PATH="$HOME/.node/bin:$PATH"` to your `.bashrc`)
 
-Now, assuming you have [npm](https://npmjs.org) installed, go ahead and install Yeoman:
+Now, assuming you have [npm](https://npmjs.org) installed, go ahead and install the Yeoman toolset:
 
 ```bash
-npm install -g yo
+npm install -g yo bower grunt-cli
 ```
 
 ### Installation
@@ -57,12 +57,6 @@ seems to take about two minutes for me.
 Now, just add data to taste.
 
 ### Some useful commands:
-In order to run any of the Grunt tasks which are described below, you'll need the Grunt CLI installed:
-
-```bash
-npm install -g grunt-cli
-```
-
 ```bash
 grunt serve
 ```
