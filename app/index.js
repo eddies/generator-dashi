@@ -102,11 +102,13 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   install: function () {
-    this.installDependencies({
-      // run `grunt wiredep` after installing bower dependencies
-      callback: function () {
-            this.spawnCommand('grunt', ['wiredep']);
-          }.bind(this) // bind the callback to the parent scope
-    });
+    if (!this.options['skip-install']) {
+      this.installDependencies({
+        // run `grunt wiredep` after installing bower dependencies
+        callback: function () {
+              this.spawnCommand('grunt', ['wiredep']);
+            }.bind(this) // bind the callback to the parent scope
+      });
+    }
   }
 });
