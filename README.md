@@ -1,4 +1,4 @@
-# generator-dashi [![Build Status](https://secure.travis-ci.org/eddies/generator-dashi.png?branch=master)](https://travis-ci.org/eddies/generator-dashi)
+# generator-dashi [![Build Status](https://travis-ci.org/eddies/generator-dashi.svg?branch=master)](https://travis-ci.org/eddies/generator-dashi)
 
 *dashi: data made delicious*
 
