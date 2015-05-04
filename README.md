@@ -93,6 +93,13 @@ generator-dashi (i.e. `cd /home/eddies/generator-dashi`):
 ```bash
 npm link
 ```
+### Dependencies
+To check if there are newer versions of dependencies, regardless of package.json constraints, use
+[npm-check-updates](https://github.com/tjunnone/npm-check-updates):
+
+Install with `npm install -g npm-check-updates` and then to check, use `npm-check-updates`.
+
+For bower-managed dependencies, use `bower list`.
 ### Releases
 Firstly, you'll need to have a user account on [npm](https://npmjs.org). Then, 
 assuming you're ready to release version number "x.y.z":
