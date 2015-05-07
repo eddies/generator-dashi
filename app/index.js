@@ -63,8 +63,8 @@ module.exports = yeoman.generators.Base.extend({
         this.destinationPath('app/data/demo.csv')
       );
       
-      this.fs.copy(
-        this.templatePath('Gruntfile.js'),
+      this.fs.copyTpl(
+        this.templatePath('_Gruntfile.js'),
         this.destinationPath('Gruntfile.js')
       );
       

@@ -19,10 +19,18 @@ generator-dashi will
 ## Getting Started
 
 ### Prerequisites
+
+ * [npm](https://www.npmjs.com/)
+ * [yeoman](http://yeoman.io/)
+ * [bower](http://bower.io/)
+ * [grunt](http://gruntjs.com/)
+ 
 In order to use generator-dashi, you need to have [Yeoman](http://yeoman.io) installed. In order to install Yeoman, you'll need to have [npm](https://npmjs.org) installed. Don't worry, it only *seems* like it's turtles all the way down.
 
-> If you're a Mac user, using Homebrew, the following will get your pre-reqs sorted out:
-> 
+The only tricky bit is getting npm installed. npm is installed as part of Node.js. However, instructions for installing Node vary by operating system and/or package manager. 
+
+For example, if you're using [Homebrew](http://brew.sh/) on OS X, the following will take care of installing npm:
+ 
 > ```bash
 brew install node --without-npm
 echo prefix=~/.node >> ~/.npmrc
@@ -31,7 +39,11 @@ curl -L https://www.npmjs.com/install.sh | sh
 
 > Finally, add `~/.node/bin` to your PATH (e.g., add `export PATH="$HOME/.node/bin:$PATH"` to your `.bashrc`)
 
-Now, assuming you have [npm](https://npmjs.org) installed, go ahead and install the Yeoman toolset:
+However, most Mac or Windows users will probably want to install Node via one of the installers from [nodejs.org](https://nodejs.org/).
+
+Most Linux users will probably want to use their systems own package manager to install Node. Have a look at [Installing Node.js via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager). As of this writing (2015-05-04), the current version of Node.js is 0.12.2. 
+
+Once [npm](https://npmjs.org) is installed, go ahead and install the Yeoman toolset:
 
 ```bash
 npm install -g yo bower grunt-cli
