@@ -1,7 +1,6 @@
 /*jshint node:true*/
 
-// Generated on <%= (new Date).toISOString().split('T')[0] %> using
-// <%= pkg.name %> <%= pkg.version %>
+// Generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> <%= pkg.version %>
 'use strict';
 
 // # Globbing

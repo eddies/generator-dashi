@@ -63,7 +63,10 @@ module.exports = yeoman.generators.Base.extend({
         this.destinationPath('app/data/demo.csv')
       );
       
-      this.fs.copyTpl(
+      // using #template for now because #copyTpl is throwing a
+      //   "Uncaught SyntaxError: Unexpected token %="
+      // when it comes across "<%%=".  
+      this.template(
         this.templatePath('_Gruntfile.js'),
         this.destinationPath('Gruntfile.js')
       );
@@ -97,6 +100,10 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('jshintrc'),
         this.destinationPath('.jshintrc')
+      );
+      this.fs.copy(
+        this.templatePath('travis.yml'),
+        this.destinationPath('.travis.yml')
       );
     }
   },
