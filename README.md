@@ -12,7 +12,7 @@ generator-dashi will
 * stub out a new Dashi application
 * sort out all the JavaScript dependencies
 * drop some git config files in place 
-* set up some convenient [Grunt(http://gruntjs.com/)] tasks to support 
+* set up some convenient [Grunt](http://gruntjs.com/) tasks to support 
   * live reloading in your browser as you edit 
   * publish your app to GitHub Pages, with all the supporting files concatenated and minified.
 
