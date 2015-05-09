@@ -1,7 +1,7 @@
 {
   "name": "<%= appname %>",
   "description": "A dashboard for tasty data visualizations",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "license:": "Apache-2.0",
   "devDependencies": {
     "grunt": "^0.4.5",

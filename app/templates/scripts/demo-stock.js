@@ -44,7 +44,7 @@ var yearlyBubbleChart = dc.bubbleChart('#yearly-bubble-chart');
 //   d3.csv('data.csv', function(data) {...};
 //   d3.json('data.json', function(data) {...};
 //   jQuery.getJson('data.json', function(data){...});
-d3.csv('data/demo.csv', function (rows) {
+d3.csv('data/demo-stock.csv', function (rows) {
     /* since its a csv file we need to format the data a bit */
   var dateFormat = d3.time.format('%m/%d/%Y');
   var numberFormat = d3.format('.2f');
@@ -579,15 +579,4 @@ d3.csv('data/demo.csv', function (rows) {
     // or you can choose to redraw only those charts associated with a specific chart group
     dc.redrawAll('group');
     */
-});
-
-
-//#### Versions
-//Determine the current version of dc with `dc.version`
-d3.selectAll('#version').text(dc.version);
-
-// Determine latest stable version in the repo via Github API
-d3.json('https://api.github.com/repos/dc-js/dc.js/releases/latest', function (error, latestRelease) {
-    /*jshint camelcase: false */
-    d3.selectAll('#latest').text(latestRelease.tag_name);
 });

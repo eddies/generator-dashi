@@ -49,18 +49,18 @@ module.exports = yeoman.generators.Base.extend({
       );
       
       this.fs.copy(
+        this.templatePath('about.html'),
+        this.destinationPath('app/about.html')
+      );
+      
+      this.fs.copy(
+        this.templatePath('demo-vc.html'),
+        this.destinationPath('app/demo-vc.html')
+      );
+      
+      this.fs.copy(
         this.templatePath('main.css'),
         this.destinationPath('app/styles/main.css')
-      );
-      
-      this.fs.copy(
-        this.templatePath('main.js'),
-        this.destinationPath('app/scripts/main.js')
-      );
-      
-      this.fs.copy(
-        this.templatePath('demo.csv'),
-        this.destinationPath('app/data/demo.csv')
       );
       
       // using #template for now because #copyTpl is throwing a
@@ -74,6 +74,20 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('README.md'),
         this.destinationPath('README.md')
+      );
+    },
+    
+    scriptfiles: function () {
+      this.fs.copy(
+        this.templatePath('scripts'),
+        this.destinationPath('app/scripts/')
+      );
+    },
+    
+    datafiles: function () {
+      this.fs.copy(
+        this.templatePath('data'),
+        this.destinationPath('app/data/')
       );
     },
     
