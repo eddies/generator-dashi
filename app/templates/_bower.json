@@ -6,7 +6,7 @@
   "dependencies": {
     "bootstrap": "~3.3.2",
     "dc.js": "2.0.0-beta.9",
-    "admin-lte": "~2.0.5",
+    "admin-lte": "~2.1.1",
     "colorbrewer": "~1.0.0"
   },
   "devDependencies": {
