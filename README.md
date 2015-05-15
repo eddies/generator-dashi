@@ -2,7 +2,9 @@
 
 *dashi: data made delicious*
 
-Dashi is dashboard for data visualizations, using [dc.js](https://dc-js.github.io/dc.js/) and [AdminLTE](https://github.com/almasaeed2010/AdminLTE).
+Dashi is dashboard for interactive data visualizations, using [dc.js](https://dc-js.github.io/dc.js/) and [AdminLTE](https://github.com/almasaeed2010/AdminLTE).
+
+![dashi-screenshot](https://cloud.githubusercontent.com/assets/149985/7650129/0b713a28-fb26-11e4-8fb0-936c2a5a17f4.png)
 
 generator-dashi is a Yeoman generator for creating Dashi applications. 
 
