@@ -1,5 +1,5 @@
 # dashi: data made delicious
-Dashi is dashboard for data visualizations.
+Dashi is dashboard for interactive data visualizations.
 
 ## Getting Started
 Presumably you've arrived at this point after having run the [Dashi generator](https://github.com/eddies/generator-dashi) (`yo dashi`).
