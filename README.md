@@ -1,12 +1,10 @@
 # generator-dashi [![Build Status](https://travis-ci.org/eddies/generator-dashi.svg?branch=master)](https://travis-ci.org/eddies/generator-dashi)
 
-*dashi: data made delicious*
+generator-dashi is a Yeoman generator for creating [Dashi](https://github.com/eddies/dashi/) applications. 
 
-Dashi is dashboard for interactive data visualizations, using [dc.js](https://dc-js.github.io/dc.js/) and [AdminLTE](https://github.com/almasaeed2010/AdminLTE).
+![dashi](https://cloud.githubusercontent.com/assets/149985/7785904/b7e3c75a-01dc-11e5-90a4-fa6dc784e7e8.gif)
 
-![dashi-screenshot](https://cloud.githubusercontent.com/assets/149985/7650129/0b713a28-fb26-11e4-8fb0-936c2a5a17f4.png)
-
-generator-dashi is a Yeoman generator for creating Dashi applications. 
+What's Dashi? Dashi is dashboard for interactive data visualizations, using [dc.js](https://dc-js.github.io/dc.js/) and [AdminLTE](https://github.com/almasaeed2010/AdminLTE). 
 
 Assuming you have Yeoman installed, you can just run `yo dashi` and
 generator-dashi will 
@@ -61,6 +59,7 @@ npm install -g generator-dashi
 Finally, initiate the generator:
 
 ```bash
+mkdir my_dashi && cd my_dashi
 yo dashi
 ```
 
